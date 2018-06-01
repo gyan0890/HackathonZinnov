@@ -1,0 +1,9 @@
+from otpemail import sendemail
+
+def createOTP(aadhaarNo):
+    otp = aadhaarNo[:4]
+    return
+if __name__ == "__main__":
+    otp = createOTP("123456781234")
+    receiveremail = "gyanlakshmi@gmail.com"
+    sendemail(otp, receiveremail)
