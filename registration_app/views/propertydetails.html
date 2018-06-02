@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<body>
+<br>
+<br>
+<br>
+<center>
+<h1>Welcome to Property Registration System!!!</h2>
+<br>
+<h2><p>Please Enter the property details to proceed</p>
+
+<form action="/sellProperty" method="POST">
+<h5>
+State : <input list="State" name="State" placeholder="eg: Tamil Nadu/Karnataka">
+<datalist id="State">
+ <option value="Assam">
+ <option value="Tamil Nadu">
+ <option value="Karnataka">
+ <option value="Kerala">
+ <option value="Andhra Pradesh">
+</datalist>
+<br>
+<br>
+District: <input list="district" name="district" placeholder="eg: Bangalore/Hasan">
+<datalist id="district">
+ <option value="Bangalore">
+ <option value="Tumkur">
+ <option value="Hasan">
+ <option value="Chikmangalore">
+ <option value="Hampi">
+</datalist>
+<br>
+<br>
+City/Taluk: <input list="taluk" name="taluk" placeholder="eg:bangalore north/south">
+<datalist id="taluk">
+ <option value="Bangalore North">
+ <option value="Bangalore South">
+ <option value="Bangalore East">
+ <option value="Bangalore West">
+</datalist>
+<br>
+<br>
+Locality: <input type="text" name="locality" placeholder="eg: JP nagar">
+<br>
+<br>
+Plot/House no: <input type="text" name="pno" placeholder="eg:164">
+<br>
+<br>
+Street Name: <input type="text" name="street" placeholder="eg: 6th cross">
+<br>
+<br>
+Postal Code: <input type="text" name="pcode" placeholder="eg:666666">
+<br>
+<br>
+Property Id: <input type="text" name="pid" placeholder="eg:survey no">
+<br>
+<br>
+
+<input type="checkbox" name="agree" value="yes"> I confirm that above specified details are true up to my knowledge and agree to proceed with sale<br>
+
+<br>
+<br>
+<input type="submit" value="Sell">
+</form>
+
+
+</body>
+</html>
