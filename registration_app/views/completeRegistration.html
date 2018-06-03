@@ -1,14 +1,54 @@
+<!DOCTYPE html>
 <html>
-   <body>
-        <h1>
+  <head>
+<style type="text/css">
+body {
+	
+	background-image: url("land.jpg");
+
+}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #008000;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 25px;
+  padding: 20px;
+  width: 300px;
+  height:50px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.div{
+background-color: #FFFFFF;
+width: 600px;
+  height:300px;
+}
+
+</style>
+</head>
+<body>
+<h3>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<center>
+<div class = "div" >
+  <body>
+        <h2>
           Enter details to complete registration
-        </h1>
+       <h3>
         <form action = "/viewSaleDeed" method = "POST">
-         Property Id: <input type="text" name="property_id">  <br>
-         <input type = "submit" value = "view Sale Deed" ><br>
-        </form>
+         Property Id: <input type="text" name="property_id" placeholder="eg:15-kas456-876-789"> <br> <br>
+         <button class="button">View Sale Deed</button ><br>
+        </form><br>
          <form action = "/completePropertyRegistration" method = "POST">
-           <input type = "submit" value = "Approve" >
+           <button class="button">Approve</button ><br>
       </form>     
-   </body>
-</html>
