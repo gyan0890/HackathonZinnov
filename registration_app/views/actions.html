@@ -1,23 +1,55 @@
 <!DOCTYPE html>
 <html>
+  <head>
+<style type="text/css">
+body {
+	
+	background-image: url("land.jpg");
+
+}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 25px;
+  padding: 20px;
+  width: 300px;
+  height:50px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.div{
+background-color: #FFFFFF;
+width: 700px;
+  height:500px;
+}
+
+</style>
+</head>
 <body>
+<h3>
 <br>
 <br>
 <br>
 <center>
+<div class = "div" >
 <h1>Congrats!!!! your identity is validated</h2>
 <br>
 <h2><p>Please select an action to proceed</p>
 
 <form action="/sellProperty" method="POST">
-<input type="submit" value="Sell a property">
+<button class="button" type="button" value="Sell a property">Sell a property</button>
 </form>
 <form action="/buyProperty" method="POST">
-<input type="submit" value="Buy a property">
+<button class="button" type="button" value="Buy a property">Buy a property</button>
 </form>
 <form action="/prepareSaleDeed" method="POST">
-<input type="submit" value="prepare sale deed">
+<button class="button" type="button" value="prepare sale deed">prepare sale deed</button>
 </form>
 <form action="/completeRegistration" method="POST">
-<input type="submit" value="complete Registration">
+<button class="button" type="button" value="complete Registration">complete Registration</button>
 </form>
