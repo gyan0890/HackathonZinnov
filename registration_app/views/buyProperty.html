@@ -1,12 +1,52 @@
+<!DOCTYPE html>
 <html>
-   <body>
-      <h1>
+  <head>
+<style type="text/css">
+body {
+	
+	background-image: url("land.jpg");
+
+}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #008000;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 25px;
+  padding: 20px;
+  width: 120px;
+  height:60px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.div{
+background-color: #FFFFFF;
+width: 600px;
+  height:300px;
+}
+
+</style>
+</head>
+<body>
+<h3>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<center>
+<div class = "div" >
+  <h1>
           Enter details to buy a property
       </h1>
+      <h4>
       <form action = "/bid" method = "POST">
-         Property Id: <input type="text" name="property_id">  <br> <br>
-         Bid Price: INR <input type="number" id="bid_price" name="bid_price"> <br> <br>
-         <input type = "submit" value = "Submit" >
+         Property Id : <input type="text" name="property_id" placeholder="eg: 15-KA345-678-678">  <br> <br>
+         Bid Price (Rs): <input type="number" id="bid_price" name="bid_price" placeholder="eg: 1000000"> <br> <br>
+         <button class="button">Submit</button>
       </form>     
-   </body>
-</html>
